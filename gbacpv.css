@@ -1,11 +1,13 @@
-/*BEGIN SN30 Pro Controller Styling*/
+/* TO USE WITH GAMEPAD VIEWER USE THE FOLLOWING STEPS */
+/* 1.) Go to https://gamepadviewer.com/#generate */
+/* 2.) Use this panel, and copy-pasta the "raw" link of this gist into the custom CSS field. */
+/* 3.) In OBS/StreamLabs/ETC. make a Browser element, and use the link provided as the target. */
+/* 4.) Afterwards, copy-pasta the same CSS in this gist into the Custom CSS section. */
+/* 5.) If it doesn't work : ¯\_(ツ)_/¯ : took me forever to get something usable, I'm assuming this is how it works. */
+
+/*BEGIN GBASP Styling*/
 /*This class defines the base attributes of the skin*/
 .controller.custom{
-    /* The background image is basically the base for the controller's skin. The 
-    PS3 controller's skin can be found at http://mrmcpowned.com/gamepad/ps3-assets/base.png
-    and you can observe it as an example. The sticks, buttons, and directional arrows are missing
-    because their appropriate elements will be incorperated when their styling is defined below.
-    The entirity of the skin's visual styling is done via background images and CSS sprites. */ 
     background: url(https://i.imgur.com/lREU9jE.png);
     position: fixed;
     height: 988px;
@@ -88,15 +90,11 @@ start and select buttons. */
     height: 15%;
     background: url(https://i.imgur.com/Tl542Ga.png);
     opacity: 0;
-    /*! top: 345px; */
-    /*! left: 465px; */
 }
 .custom .button.pressed{
     opacity: 1;
 }
 .custom .a{
-    /*! width: 100%; */
-    /*! height: 100%; */
     top: 349px;
     left: 465px;
 }
@@ -111,35 +109,30 @@ start and select buttons. */
     height: 100%;
 }
 .custom .face{
-    /*background: url(https://i.imgur.com/9yG0Ik7.png);*/
     position: absolute;
     opacity: 0;
 }
 .custom .face.up{
 	background: url(https://i.imgur.com/OxFiJBr.png);
-    /*background-position: 74px 14px;*/
     width: 100%;
     height: 100%;
 }
 .custom .face.down{
-	background: url(https://i.imgur.com/B2k4xIL.png);
-    /*background-position: 74px 138px;*/
+    background: url(https://i.imgur.com/B2k4xIL.png);
     width: 100%;
     height: 100%;
 }
 .custom .face.left{
     background: url(https://i.imgur.com/waEIUg2.png);
-    /*background-position: 13px 75px;*/
     width: 100%;
     height: 100%;
 }
 .custom .face.right{
     background: url(https://i.imgur.com/MwsubyL.png);
-    /*background-position: 138px 75px;*/
     width: 100%;
     height: 100%;
 }
 .custom .face.pressed{
     opacity: 1;
 }
-/*END SN30 Pro Controller Styling*/
+/*END GBASP Styling*/
